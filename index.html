@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Milioner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body id="body">
+
+        <div class="header" style="height: 110px; background-color: rgba(0, 2, 166,0.4);">
+            <img src="slike/logo.svg" alt="asd" class="logo" >
+            <h1 class="tittle">MM Milioner</h1>
+        </div>
+        <div class="header" style="background-color: rgba(0, 2, 166,0.4);height: 35px;" >
+            <h2 class="tittle" style="font-size: 26px;">Da li želite da postanete milioner?</h2>
+        </div>
+    
+        <div class="header" style="height: 40px;">
+                <ul style="margin-right: 40px;">
+                    <a href="#" style="color: black;">MM Milioner</a>
+                    <a href="rules.html">Pravila Igre</a>
+                </ul>
+        </div>
+
+        <div id="forIframe" >
+            
+        </div>
+    
+        <div id="shape" class="shape">
+            <div class="game">
+                <div id="start-container"class="button-div">
+                    <h2 id="start-text" class="tittle" style="height: 40px; -webkit-text-stroke: 0.5px #0002A6; font-size:50px;font-family: Open-sans; color: #C87F00; ">Da li želite da postanete milioner?</h2>
+                    <br>
+                    <button id="start-btn" class="start-btn btn">Započni igru!</button>
+                </div>
+    
+                <div id="try-again-container"class="button-div hide">
+                    <h2 id="start-text" class="tittle" style="height: 40px; -webkit-text-stroke: 0.5px #0002A6; font-size:50px;font-family: Open-sans; color: #C87F00; ">Žao nam je, vreme je isteklo!</h2>
+                    <br>
+                    <button id="try-again-btn" class="start-btn btn">Pokušaj ponovo!</button>
+                </div>
+
+                <div id="wrong-answer"class="button-div hide">
+                    <h2 id="start-text" class="tittle" style="height: 40px; -webkit-text-stroke: 0.5px #0002A6; font-size:50px;font-family: Open-sans; color: #C87F00; ">Žao nam je, vaš odgovor je<span style="color: red;"> netačan</span>!</h2>
+                    <br>
+                    <button id="try-again" class="start-btn btn">Pokušaj ponovo!</button>
+                </div>
+
+                <div id="game-winner"class="button-div hide">
+                    <h2 id="start-text" class="tittle" style="height: 40px; -webkit-text-stroke: 0.5px #0002A6; font-size:50px;font-family: Open-sans; color: green; ">Čestitamo, postali ste milioner!!!</h2>
+                    <br>
+                    <button id="play-again-milionaire" class="start-btn btn">Igraj opet!</button>
+                    <div class="container-money">
+                        <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        <span></span>
+                        <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        <span></span>
+                        <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        <span></span>
+                        <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                    </div>
+                </div>
+            
+                    <div id="game-container" class="hide" style="height: 630px;width: 1080px;">
+                        
+                            <div class="parts">
+                                <div style="margin-left: 25px; flex-direction: column;">
+                                    <div id="sound">
+                                        <img id="sound1" src="slike/sound.png" alt="asd" class="sound" >
+                                        <img id="sound2"  src="slike/sound2.png" alt="asd" class="sound hide" >
+                                    </div>
+                                    <div id="timer" class="timer">20</div>
+                                </div>
+                
+                            </div>   
+                
+                            <div class="parts" style="height: 200px;">
+    
+                                
+                                    <div class="helps">
+                                        <div id="half-choice" class="help">
+                                            <h4 class="awards-text" style=" margin-top: 21px; color: #909CFF; font-size: 30px;">50:50</h4>
+                                        </div>
+                                        <div id="google" class="help">
+                                            <h4 id="google-text" class="awards-text" style="margin-top: 23px; color: #909CFF; font-size: 25px;">Google</h4>
+                                            <div id="timer2" class="hide" style="margin-top: 24px;">20</div>
+                                        </div>
+                                        <div id="change-question" class="help">
+                                              <img style="margin-top: 22px; width: 35px; height: 35px;" src="slike/aa.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+    
+                                    <div id="logo-game" class="header" style="margin-top: 130px; height: 50px;background-color: transparent; opacity: 0.2;">
+                                        <img src="slike/logo.svg" alt="asd" class="logo" >
+                                        <h1 class="tittle">MM Milioner</h1>
+                                    </div>
+    
+                                    <h1 id="true-answ" class="hide" style="margin-top: 65px; color: green;">Tačan odgovor!</h1>
+                                    
+                                    </div>  
+                
+                            <div class="parts" style=" width: 33%; float: left;">
+                                <div class="awards">
+                                    <div style="margin-top: 15px;">
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text" style="color: white;">15 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 000 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">14 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;500 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">13 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;250 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">12 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;125 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">11 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 64 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text" style="color: white;">10 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 32 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">&nbsp; &nbsp;9 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">&nbsp; &nbsp;8 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">&nbsp;&nbsp;&nbsp;7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;4 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text">&nbsp; &nbsp;6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;2 000 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text" style="color: white;">&nbsp; &nbsp;5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1 000 din</h1>
+                                        </div>
+                                        <div class="awards-div">
+                                            <h1 class="awards-text">&nbsp; &nbsp;4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;500 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text"> &nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;300 din</h1>
+                                        </div>
+                                        <div class="awards-div" >
+                                            <h1 class="awards-text"> &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;200 din</h1>
+                                        </div>
+                                        <div class="awards-div active" >
+                                            <h1 class="awards-text">&nbsp; &nbsp;1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;100din</h1>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="QA">
+                                <div class="questions"> 
+                                    <div id='question' class="question">
+                                       as
+                                    </div>
+                                </div>
+                                <div id="answers" class="answers">
+                                    <div  class="answer">as</div>
+                                    <div  class="answer">as</div>
+                                    <div  class="answer">as</div>
+                                    <div  class="answer">as</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,443 @@
+
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #0002A6;
+  opacity: 1;
+  font-weight: bold;
+  
+}
+
+html {
+    font-size: 10px;
+    background: url('./slike/background.jpg') bottom center;
+    background-size: cover;
+    background-repeat:  repeat-y;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  } 
+
+  .shape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 156, 255,0.7);
+    margin: auto;
+    margin-top: 45px;
+    height: 700px;
+    width: 1150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+  }
+
+  .shape2{
+    display: flex;
+    background-color: rgba(144, 156, 255,0.7);
+    margin: auto;
+    margin-top: 20px;
+    height: 600px;
+    width: 1150px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+  }
+
+  .logo {
+    background: url('slike/logo.svg');
+    width: 111px;
+    height: 98.43px;
+    left: 150px;
+  }
+
+ 
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(144, 156, 255,0.7)
+  }
+
+  .tittle{
+    font-family: 'M', sans-serif;
+    font-size: 64px;
+    color: #909CFF;
+    font-weight: 2000;
+  }
+
+  .game{
+    height: 630px;
+    width: 1080px;
+    background: url('slike/gameBackground.png');
+    
+  }
+
+  .parts{
+    width: 33.33%;
+     float: left;
+  }
+
+  .sound{
+    width: 100px;
+    height: 74px;
+    margin-top: 45px;
+    cursor: pointer;
+    margin-left: 47px
+  }
+
+  .timer{
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #C87F00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #C87F00;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-left: 47px
+  }
+
+  .help:hover{
+    background:linear-gradient(#C87F00, black) ;
+    color: black;
+  }
+
+  .helps{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+  .help{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(#0002A6, black);
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 25px;
+    color: #909CFF;
+    clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+  }
+
+  .awards{
+    box-sizing: border-box;
+    width: 194.61px;
+    height: 410px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: rgba(200, 127, 0, 0.3);
+    border: 2.56064px solid #C87F00;
+    border-radius: 23.0458px;
+  }
+
+  .awards-div{
+    display: flex;
+    align-items: center;
+    height:  25px;
+  }
+  .awards-div.active,
+  .awards-text.active{
+    background:linear-gradient(#C87F00, black); ;
+    color: #909CFF;
+  }
+
+  .awards-text{
+    font-family: 'Lato', sans-serif;
+    color: #E1A02E;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+  }
+
+
+  .QA{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .questions{
+    width: 80%;
+    margin-top: 9px;
+    background: linear-gradient(#0002A6, black);
+    border: 1px solid #C87F00;
+    text-align: center;
+    justify-content: center;
+    padding: 17px;
+    border-radius: 15px;
+  }
+
+  .question{
+    font-family: 'Montserrat', sans-serif;
+    color: #909CFF;
+    font-size: 25px;
+    font-weight: medium;
+  }
+
+  .confirmQuestion{
+    font-family: 'Montserrat', sans-serif;
+    color: #E1A02E;
+    font-size: 25px;
+    font-weight: medium;
+  }
+
+  .confirm-question-button{
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 50px;
+    padding: 10px;
+    background: linear-gradient(#0002A6, black);
+    border: 1px solid #C87F00;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 25px;
+    color: #909CFF;
+    margin: 8px;
+  }
+  .answers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  
+
+  .answer:not(:focus):hover,
+  .confirm-question-button:hover,
+  .answer.active{
+    background:linear-gradient(#C87F00, black) ;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+
+  .answer{
+    pointer-events: auto;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 39%;
+    padding: 10px;
+    background: linear-gradient(#0002A6, black);
+    border: 1px solid #C87F00;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #909CFF;
+    margin: 8px;
+  }
+
+  .start{
+    height: 100%;
+    background-color: yellow;
+  }
+
+  .button-div{
+    height: 630px;
+    width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .start-btn:hover{
+    background:linear-gradient(#C87F00, black) ;
+    color: black;
+    
+  }
+
+  .start-btn{
+    cursor: pointer;
+    background: linear-gradient(#0002A6, black);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #C87F00;
+    
+  }
+
+  .correct{
+    background: linear-gradient(green, black);
+  }
+  .wrong{
+    background: linear-gradient(red, black);
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+  
+  .ml2 {
+    font-weight: 900;
+    font-size: 4.2em;
+    
+
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+  .forIframe{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-money{
+    pointer-events: none;
+    top:250px;
+    background:transparent;
+    width:100%;
+    height:100%;
+    min-height: 800px;
+    position:absolute;
+    left:0%;
+  /* 	background:#1E1E20 url(http://premiumcoding.com/CSSTricks/fallingLeaves/autumn.jpg) center top no-repeat; */
+    background-size: cover;
+  }
+  
+  .loader {
+      text-align: center;
+  }
+  .loader span {
+      display: inline-block;
+      
+     
+      margin: -280px 40px 54px  -34px;
+           background:url("https://cdn.theatlantic.com/assets/media/img/posts/Screen%20Shot%202013-10-08%20at%209.13.38%20AM.png");
+    background-size: contain;
+      
+      -webkit-animation: loader 10s infinite  linear;
+      -moz-animation: loader 10s infinite  linear;
+  }
+  .loader span:nth-child(5n+5) {
+  
+      -webkit-animation-delay: 1.3s;
+      -moz-animation-delay: 1.3s;
+  }
+  .loader span:nth-child(3n+2) {
+  
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+  }
+  .loader span:nth-child(2n+5) {
+  
+      -webkit-animation-delay: 1.7s;
+      -moz-animation-delay: 1.7s;
+  }
+  
+  .loader span:nth-child(3n+10) {
+  
+      -webkit-animation-delay: 2.7s;
+      -moz-animation-delay: 2.7s;
+  }
+  .loader span:nth-child(7n+2) {
+  
+      -webkit-animation-delay: 3.5s;
+      -moz-animation-delay: 3.5s;
+  }
+  .loader span:nth-child(4n+5) {
+  
+      -webkit-animation-delay: 5.5s;
+      -moz-animation-delay: 5.5s;
+  }
+  .loader span:nth-child(3n+7) {
+  
+      -webkit-animation-delay: 8s;
+      -moz-animation-delay: 8s;
+  }
+  @-webkit-keyframes loader {
+    0% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+  
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+  
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+  
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+  }
+  @-moz-keyframes loader {
+    0% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+      
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+     
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+      
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+    }
+  }
+
+
+
+
+ 
